@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "985611149275",
+    "firebase_url": "https://proyectevita.firebaseio.com",
+    "project_id": "proyectevita",
+    "storage_bucket": "proyectevita.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985611149275:android:446a2e1539304552b011fe",
+        "android_client_info": {
+          "package_name": "air.com.activia.mensajes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985611149275-p310n93krnj7q3q7scukhdk5tkomttvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzHTm0UwDjR2ZZRTRfF1BLu0EsiKLYpU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985611149275-p310n93krnj7q3q7scukhdk5tkomttvu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "985611149275-bumd2qq6oqbl5dr19mpjvgke6k7bmf9n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "air.com.site.pruebafirebase"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985611149275:android:88bd5823bef5df5eb011fe",
+        "android_client_info": {
+          "package_name": "com.activia.evita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985611149275-bg8d6pr8pna7c8cfmlclhsp9roreid3s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.activia.evita",
+            "certificate_hash": "97f85ca48857eedad63e6ad0b8c2479ecad9d90c"
+          }
+        },
+        {
+          "client_id": "985611149275-p310n93krnj7q3q7scukhdk5tkomttvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzHTm0UwDjR2ZZRTRfF1BLu0EsiKLYpU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985611149275-p310n93krnj7q3q7scukhdk5tkomttvu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "985611149275-bumd2qq6oqbl5dr19mpjvgke6k7bmf9n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "air.com.site.pruebafirebase"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985611149275:android:6d6beb89a817ddceb011fe",
+        "android_client_info": {
+          "package_name": "com.example.eva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985611149275-p310n93krnj7q3q7scukhdk5tkomttvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzHTm0UwDjR2ZZRTRfF1BLu0EsiKLYpU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985611149275-p310n93krnj7q3q7scukhdk5tkomttvu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "985611149275-bumd2qq6oqbl5dr19mpjvgke6k7bmf9n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "air.com.site.pruebafirebase"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

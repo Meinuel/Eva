@@ -1,0 +1,30 @@
+{
+    "nombreApp" : "Evita",
+    "rutas" : [
+        {
+            "ruta" : "Alertas",
+            "icon" : "add_alert",
+            "texto": "Alarmas"
+        },
+        {
+            "ruta" : "AlertasTer",
+            "icon" : "add_alert",
+            "texto": "Alarmas Terceros"
+        },
+        {
+            "ruta" : "Herramientas",
+            "icon" : "business_center",
+            "texto": "Herramientas"
+        },
+        {
+            "ruta" : "Animated",
+            "icon" : "donut_large",
+            "texto": "Animación"
+        },
+        {
+            "ruta" : "Dynamic",
+            "icon" : "donut_large",
+            "texto": ""
+        }
+    ]
+}

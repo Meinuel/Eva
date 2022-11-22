@@ -5,7 +5,7 @@ import 'package:xml/xml.dart' as xml;
 class TxProvider {
 
   String sRsp;
-  final _sUrl = 'http://activiac.homeip.net/';
+  final url = Uri.parse('http://activiac.homeip.net/');
   
   Future<List<String>> pruebaTransaccion(maxTimeOut,xmlTxPrueba)async{
     final String sRequestBody = '''<?xml version="1.0" encoding="utf-8"?>
@@ -24,7 +24,7 @@ class TxProvider {
         
       
       http.Response response = await http.post(
-        _sUrl,
+        url,
         headers: {
         'Host'        : 'activiac.homeip.net',
         'Content-Type': 'text/xml; charset=utf-8',

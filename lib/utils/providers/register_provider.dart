@@ -6,7 +6,7 @@ import 'package:xml/xml.dart' as xml;
 class RegisterProvider{
 
  String sRsp;
- String _sUrl = 'http://eva.activiaweb.com.ar/Service.asmx';
+ final url = Uri.parse('http://eva.activiaweb.com.ar/Service.asmx');
  //String _sUrl = 'http://10.0.2.2:3856/Service2.asmx';
 
 Future<String> registrarUsuario(sUser,sMail,sPin)async{
@@ -27,7 +27,7 @@ Future<String> registrarUsuario(sUser,sMail,sPin)async{
     
  
   http.Response response = await http.post(
-    _sUrl,
+    url,
     headers: {
         'Host'        : 'eva.activiaweb.com.ar',
         'Content-Type': 'text/xml; charset=utf-8',

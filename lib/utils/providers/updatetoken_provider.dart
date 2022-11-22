@@ -6,7 +6,7 @@ class UpdateToken{
 
   updateToken(sToken,sUser)async {
 
-  final String _sUrl='http://eva.activiaweb.com.ar/Service.asmx';
+  final url = Uri.parse('http://eva.activiaweb.com.ar/Service.asmx');
   //final String _sUrl = 'http://10.0.2.2:3856/Service2.asmx';
   
   String sRequestBody = '''<?xml version="1.0" encoding="utf-8"?>
@@ -22,7 +22,7 @@ class UpdateToken{
     try {
       
     http.Response response = await http.post(
-      _sUrl,
+      url,
      headers: {
         'Host'        : 'eva.activiaweb.com.ar',
         'Content-Type': 'text/xml; charset=utf-8',

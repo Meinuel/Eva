@@ -6,9 +6,7 @@ import 'package:http/http.dart' as http;
 class UserProvider {
 
  String sRsp;
- //final String _sUrl = 'http://10.0.2.2:3856/Service2.asmx';
- //final String _sUrl = 'http://192.168.0.188:3856/Service2.asmx?';
-  final String _sUrl = 'http://eva.activiaweb.com.ar/Service.asmx';
+  final url = Uri.parse('http://eva.activiaweb.com.ar/Service.asmx');
 
   Future<String> traerValidacion (String sUser,String sPass) async {
     
@@ -25,7 +23,7 @@ class UserProvider {
 try {
 
       http.Response response = await http.post(
-        _sUrl,
+        url,
         headers: {
           'Host'        : 'eva.activiaweb.com.ar',
           'Content-Type': 'text/xml; charset=utf-8',
@@ -34,8 +32,7 @@ try {
         body: utf8.encode(sRequestBody)
       );
  
-   
-  sRsp =response.body;
+  sRsp = response.body;
 
   final raw = xml.XmlDocument.parse(sRsp);
   final elements = raw.findAllElements('LogueoFlutterResult');

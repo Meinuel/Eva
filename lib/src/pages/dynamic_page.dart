@@ -35,7 +35,7 @@ class _DynamicPageState extends State<DynamicPage> {
 
     backgroundColor: Colors.white,
     body:Opacity(
-          opacity:opacidad ,
+          opacity:opacidad,
           child: Column(
             children: <Widget>[  
               Spacer(flex: 1),
@@ -43,27 +43,32 @@ class _DynamicPageState extends State<DynamicPage> {
                 alignment: Alignment.center,
                 margin: EdgeInsets.only(top:20),
                 child: Text('OS : $sObraSocial'.toUpperCase(),style: TextStyle(fontFamily:sFontActivia,fontSize: 25,color: Colors.red[600],fontWeight: FontWeight.bold),),),
-              Spacer(flex: 1), 
-              Column(
-                children: [
-                  Container(
-                    margin: EdgeInsets.symmetric(horizontal:50),
-                    child:Text(_handleFecha(sFechaError,'ERROR : ') ,style: TextStyle(fontFamily:sFontActivia,),),),  
-                  Container( 
-                    margin: EdgeInsets.symmetric(horizontal:50),        
-                    child:Text(_lenghtControl(sDescripcion) ,style: TextStyle(fontFamily:sFontActivia,fontSize: 15),),), 
-                  Container(
-                    margin: EdgeInsets.symmetric(horizontal:50),
-                    child:Text(_lenghtControl(sDatosUtiles) ,style: TextStyle(fontFamily:sFontActivia,),),),  
-                  Container(
-                    margin: EdgeInsets.symmetric(horizontal:50),
-                    child:Text('ESTADO : $sMiEstadoAviso' ,style: TextStyle(fontFamily:sFontActivia,),),),           
-                  Container(
-                    margin: EdgeInsets.symmetric(horizontal:50),
-                    child:Text('TIPO : $sMiTipo' ,style: TextStyle(fontFamily:sFontActivia,),),),     
-                  Container(    
-                    child:Text(_handleFecha(sFechaHoraSolucion, 'SOLUCIÓN : ') ,style: TextStyle(fontFamily:sFontActivia))),  
-                ],
+              Spacer(flex: 1),
+              Divider(endIndent: 10, indent: 10), 
+              Container(
+                height: 200,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      //margin: EdgeInsets.symmetric(horizontal:50),
+                      child:Text(_handleFecha(sFechaError) ,style: TextStyle(fontFamily:sFontActivia))),  
+                    Container( 
+                     // margin: EdgeInsets.symmetric(horizontal:50),        
+                      child:Text(_lenghtControl(sDescripcion) ,style: TextStyle(fontFamily:sFontActivia,fontSize: 15))), 
+                    Container(
+                      //margin: EdgeInsets.symmetric(horizontal:50),
+                      child:Text(_lenghtControl(sDatosUtiles) ,style: TextStyle(fontFamily:sFontActivia))),  
+                    // Container(
+                    //   margin: EdgeInsets.symmetric(horizontal:50),
+                    //   child:Text('ESTADO : $sMiEstadoAviso' ,style: TextStyle(fontFamily:sFontActivia))),     
+                    Container(
+                     // margin: EdgeInsets.symmetric(horizontal:50),
+                      child:Text('TIPO : $sMiTipo' ,style: TextStyle(fontFamily:sFontActivia))),     
+                    // Container(    
+                    //   child:Text(_handleFecha(sFechaHoraSolucion, 'SOLUCIÓN : ') ,style: TextStyle(fontFamily:sFontActivia))),  
+                  ],
+                ),
               ),
               Spacer(flex: 1),
               Container(
@@ -196,17 +201,16 @@ class _DynamicPageState extends State<DynamicPage> {
     
     }
 
-  String _handleFecha(String fecha,tipo) {
+  String _handleFecha(String fecha) {
     if(fecha.length != 12){
-      final String sDate = tipo + fecha;
-      return sDate;
+      return fecha;
     }else{
       String sYear = fecha.substring(0,4) + '/';
       String sMonth = fecha.substring(4,6) + '/';
       String sDay = fecha.substring(6,8) + ' - ';
       String sHour = fecha.substring(8,10) + ':';
       String sMinutes = fecha.substring(10,12);
-      final String sDate = tipo + sYear + sMonth + sDay + sHour + sMinutes ;
+      final String sDate = sYear + sMonth + sDay + sHour + sMinutes ;
       return sDate;
     }
   }

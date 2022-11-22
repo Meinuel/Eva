@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 class LimpiezaProvider {
 
  String sRsp;
- final String _sUrl = 'http://eva.activiaweb.com.ar/Service.asmx';
+ final url = Uri.parse('http://eva.activiaweb.com.ar/Service.asmx');
  //final String _sUrl = 'http://10.0.2.2:3856/Service2.asmx';
 
   Future<String> limpieza (String sIdAlarma,String sTipoAvisoMail) async {
@@ -21,7 +21,7 @@ class LimpiezaProvider {
 </soap:Envelope>''';
 
       http.Response response = await http.post(
-        _sUrl,
+        url,
         headers: {
         'Host'        : 'eva.activiaweb.com.ar',
         'Content-Type': 'text/xml; charset=utf-8',
